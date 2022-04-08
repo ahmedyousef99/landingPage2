@@ -13,13 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  window.addEventListener("scroll", function () {
+document.addEventListener('DOMContentLoaded', function () {
+  window.addEventListener('scroll', function () {
     if (window.scrollY > 470) {
-      document.getElementById("btn-top").classList.add("d-block");
+      document.querySelector('.navbtns').style.display = 'block';
       // add padding top to show content behind navbar
     } else {
-      document.getElementById("btn_top").classList.remove("d-block");
+      document.querySelector('.navbtns').style.display = 'none';
       // remove padding top from body
     }
   });
